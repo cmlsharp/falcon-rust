@@ -374,8 +374,8 @@ impl<const N: usize> PublicKey<N> {
 
 #[derive(Debug, Clone, PartialEq, Eq)]
 pub struct Signature<const N: usize> {
-    r: [u8; 40],
-    s: Vec<u8>,
+    pub r: [u8; 40],
+    pub s: Vec<u8>,
 }
 
 impl<const N: usize> Signature<N> {

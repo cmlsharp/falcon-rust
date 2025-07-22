@@ -296,7 +296,7 @@ impl<const N: usize> Eq for SecretKey<N> {}
 
 #[derive(Debug, Clone, PartialEq)]
 pub struct PublicKey<const N: usize> {
-    h: Polynomial<Felt>,
+    pub h: Polynomial<Felt>,
 }
 
 impl<const N: usize> PublicKey<N> {
